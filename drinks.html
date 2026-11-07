@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Напитки — Coffee Land</title>
+  <meta name="description" content="Эспрессо, американо, капучино, латте и другие кофейные напитки: состав, рецепты и отличия.">
+  <meta name="theme-color" content="#241812">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="category" data-cat="drinks">
+  <div id="site-header"></div>
+  <main>
+    <section class="cat-hero wrap" id="cat-hero"></section>
+    <section class="wrap section">
+      <div class="toolbar">
+        <label class="filter"><span id="filter-ic"></span><span class="sr-only">Поиск в разделе</span><input id="filter" type="search" placeholder="Найти в разделе" autocomplete="off"></label>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="none" id="none" hidden>В этом разделе ничего не нашлось. Попробуй другое слово или воспользуйся общим поиском.</p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

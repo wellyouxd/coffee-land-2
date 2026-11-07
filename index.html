@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Land — всё про кофе с нуля</title>
+  <meta name="description" content="Coffee Land: напитки, зёрна, оборудование и методы заваривания. Подробные статьи и видеоуроки для тех, кто ничего не знает о кофе.">
+  <meta name="theme-color" content="#241812">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-text">
+        <span class="sticker">для тех, кто пока ничего не знает</span>
+        <h1>Кофе с нуля: <em>от зерна</em> до чашки</h1>
+        <p class="hero-lead">Разбираем напитки, зёрна, оборудование и способы заваривания простым языком. Без занудства и с подробными пошаговыми рецептами.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#path">С чего начать</a>
+          <a class="btn btn-ghost" href="#sections">Все разделы</a>
+        </div>
+        <button class="hero-search" type="button" data-open-search>
+          <span id="hero-search-ic"></span>
+          Попробуй найти: воронка, эспрессо, арабика…
+        </button>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <img class="hero-img" src="img/hero.png" alt="" onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+        <svg class="hero-cup" hidden viewBox="0 0 400 440" xmlns="http://www.w3.org/2000/svg">
+          <path d="M150 40c-14 24 14 36 0 62M200 30c-14 28 14 40 0 70M250 40c-14 24 14 36 0 62" fill="none" stroke="#f2c9a4" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+          <path d="M96 128h208l-14-30H110z" fill="#2b1c15"/>
+          <rect x="88" y="124" width="224" height="22" rx="8" fill="#3a271d"/>
+          <path d="M104 146h192l-20 242q-1 18-19 18H143q-18 0-19-18z" fill="#efd9b8"/>
+          <path d="M112 226h176l-8 112H120z" fill="#8a5a3a"/>
+          <path d="M112 226h176l-1 16H113z" fill="#9c6845"/>
+          <text x="200" y="293" text-anchor="middle" font-family="Unbounded, sans-serif" font-weight="900" font-size="26" fill="#2b1c15">CL</text>
+          <circle cx="160" cy="180" r="3" fill="#b88a5a"/><circle cx="238" cy="172" r="2.5" fill="#b88a5a"/><circle cx="212" cy="196" r="3.5" fill="#b88a5a"/>
+          <circle cx="150" cy="370" r="3" fill="#b88a5a"/><circle cx="240" cy="378" r="3" fill="#b88a5a"/>
+        </svg>
+        <span class="fbean fb1"><svg viewBox="0 0 40 56"><use href="#bean"/></svg></span>
+        <span class="fbean fb2"><svg viewBox="0 0 40 56"><use href="#bean"/></svg></span>
+        <span class="fbean fb3"><svg viewBox="0 0 40 56"><use href="#bean"/></svg></span>
+        <span class="fbean fb4"><svg viewBox="0 0 40 56"><use href="#bean"/></svg></span>
+      </div>
+    </section>
+
+    <div class="marquee-clip" aria-hidden="true"><div class="marquee"><div class="marquee-track" id="marquee"></div></div></div>
+
+    <section class="wrap section" id="sections">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Разделы</p>
+        <h2>Выбирай, с чего начать</h2>
+        <p>Четыре раздела, в каждом статьи с подробным объяснением, рецептами и видеоуроками.</p>
+      </div>
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <section class="wrap section" id="path">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Путь новичка</p>
+        <h2>Пять шагов, чтобы понять кофе</h2>
+        <p>Если не знаешь, с чего начать, иди по порядку: после этого ты разберёшься в основах.</p>
+      </div>
+      <div class="path" id="path-list"></div>
+    </section>
+
+    <section class="wrap section">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Популярное</p>
+        <h2>Читают чаще всего</h2>
+      </div>
+      <div class="grid" id="popular"></div>
+    </section>
+
+    <section class="wrap section">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Запомни</p>
+        <h2>Три цифры, которые решают многое</h2>
+      </div>
+      <div class="facts">
+        <div class="fact glass reveal"><b>92–96 °C</b><span>оптимальная температура воды для большинства фильтр-методов</span></div>
+        <div class="fact glass reveal"><b>1:16</b><span>пропорция кофе и воды для воронки: 15 г кофе на 240 г воды</span></div>
+        <div class="fact glass reveal"><b>25–30 с</b><span>время приготовления одной порции эспрессо</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
